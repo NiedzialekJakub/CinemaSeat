@@ -14,6 +14,9 @@ public class Ticket
 {
     public string Id {get; set;} = Guid.NewGuid().ToString();
 
+    public string? UserId {get; set;}
+    public int FilmId {get; set;}
+
     public decimal Price {get; set;}
     public TicketStatus Status {get; set;} = TicketStatus.Free;
     public DateTime BookingDate {get; set;}
