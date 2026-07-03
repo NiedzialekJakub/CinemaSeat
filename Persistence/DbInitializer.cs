@@ -28,131 +28,146 @@ public class DbInitializer
             new Film
             {
                 Id = 1,
-                Name = "Avatar",
+                Title = "Avatar",
                 Date = new DateTime(2026, 7, 1, 15, 0, 0),
                 ScreeningRoom = 1,
-                Category = "Sci-Fi"
+                Category = "Sci-Fi",
+                Description = "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."
             },
             new Film
             {
                 Id = 2,
-                Name = "Avatar: The Way of Water",
+                Title = "Avatar: The Way of Water",
                 Date = new DateTime(2026, 7, 1, 19, 0, 0),
                 ScreeningRoom = 1,
-                Category = "Sci-Fi"
+                Category = "Sci-Fi",
+                Description = "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home."
             },
             new Film
             {
                 Id = 3,
-                Name = "Star Wars: The Force Awakens",
+                Title = "Star Wars: The Force Awakens",
                 Date = new DateTime(2026, 7, 2, 16, 0, 0),
                 ScreeningRoom = 2,
-                Category = "Sci-Fi"
+                Category = "Sci-Fi",
+                Description = "As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace."
             },
             new Film
             {
                 Id = 4,
-                Name = "Jurassic World",
+                Title = "Jurassic World",
                 Date = new DateTime(2026, 7, 3, 18, 30, 0),
                 ScreeningRoom = 1,
-                Category = "Sci-Fi"
+                Category = "Sci-Fi",
+                Description = "A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree."
             },
 
             //Action
             new Film
             {
                 Id = 5,
-                Name = "Avengers: Endgame",
+                Title = "Avengers: Endgame",
                 Date = new DateTime(2026, 7, 2, 19, 30, 0),
                 ScreeningRoom = 1,
-                Category = "Action"
+                Category = "Action",
+                Description = "After the devastating events of Avengers: Wojna bez granic (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
             },
             new Film
             {
                 Id = 6,
-                Name = "Avengers: Infinity War",
+                Title = "Avengers: Infinity War",
                 Date = new DateTime(2026, 7, 3, 15, 0, 0),
                 ScreeningRoom = 2,
-                Category = "Action"
+                Category = "Action",
+                Description = "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe."
             },
             new Film
             {
                 Id = 7,
-                Name = "The Avengers",
+                Title = "The Avengers",
                 Date = new DateTime(2026, 7, 4, 17, 0, 0),
                 ScreeningRoom = 1,
-                Category = "Action"
+                Category = "Action",
+                Description = "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity."
             },
             new Film
             {
                 Id = 8,
-                Name = "Furious 7",
+                Title = "Furious 7",
                 Date = new DateTime(2026, 7, 4, 21, 0, 0),
                 ScreeningRoom = 3,
-                Category = "Action"
+                Category = "Action",
+                Description = "Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose brother."
             },
             new Film
             {
                 Id = 9,
-                Name = "Top Gun: Maverick",
+                Title = "Top Gun: Maverick",
                 Date = new DateTime(2026, 7, 5, 20, 0, 0),
                 ScreeningRoom = 2,
-                Category = "Action"
+                Category = "Action",
+                Description = "The story involves Maverick confronting his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission."
             },
 
             //Fantasy
             new Film
             {
                 Id = 10,
-                Name = "Ne Zha 2",
+                Title = "The Hobbit: The Battle of the Five Armies",
                 Date = new DateTime(2026, 7, 5, 14, 0, 0),
                 ScreeningRoom = 3,
-                Category = "Fantasy"
+                Category = "Fantasy",
+                Description = "Bilbo Baggins and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness."
             },
             new Film
             {
                 Id = 11,
-                Name = "Inside Out 2",
+                Title = "Inside Out 2",
                 Date = new DateTime(2026, 7, 2, 14, 0, 0),
                 ScreeningRoom = 3,
-                Category = "Fantasy"
+                Category = "Animated",
+                Description = "A sequel that features Riley entering puberty and experiencing brand new, more complex emotions as a result. As Riley tries to adapt to her teenage years, her old emotions try to adapt to the possibility of being replaced."
             },
             new Film
             {
                 Id = 12,
-                Name = "The Lord of the Rings: The Return of the King",
+                Title = "The Lord of the Rings: The Return of the King",
                 Date = new DateTime(2026, 7, 6, 18, 0, 0),
                 ScreeningRoom = 1,
-                Category = "Fantasy"
+                Category = "Fantasy",
+                Description = "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
             },
             //Animated
 
             new Film
             {
                 Id = 13,
-                Name = "The Lion King",
+                Title = "The Lion King",
                 Date = new DateTime(2026, 7, 3, 11, 0, 0),
                 ScreeningRoom = 3,
-                Category = "Animated"
+                Category = "Animated",
+                Description = "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself."
             },
 
             new Film
             {
                 Id = 14,
-                Name = "The Super Mario Bros. Movie",
+                Title = "The Super Mario Bros. Movie",
                 Date = new DateTime(2026, 7, 4, 13, 0, 0),
                 ScreeningRoom = 2,
-                Category = "Animated"
+                Category = "Animated",
+                Description = "Brooklyn plumbers Mario and Luigi are warped to the magical Mushroom Kingdom, and Mario must team up with Princess Peach, Toad, and Donkey Kong to save Luigi from the evil Bowser."
             },
 
             //Drama
             new Film
             {
                 Id = 15,
-                Name = "Titanic",
+                Title = "Titanic",
                 Date = new DateTime(2026, 7, 1, 20, 0, 0),
                 ScreeningRoom = 2,
-                Category = "Drama"
+                Category = "Drama",
+                Description = "A young aristocrat falls in love with a poor artist aboard the luxurious, ill-fated RMS Titanic."
             }
         };
 

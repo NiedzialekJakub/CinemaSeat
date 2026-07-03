@@ -7,3 +7,12 @@ type Ticket = {
     row: number
     sector: number
 }
+
+type Film = {
+    id: number
+    title: string
+    date: string
+    screeningRoom: number
+    category: string
+    description: text
+}
