@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using Application.Users.Commands;
 using Application.Users.Queries;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
@@ -20,5 +21,11 @@ public class UsersController() : BaseApiController
     public async Task<ActionResult<User>> GetUser(string id)
     {
         return await Mediator.Send(new GetUser.Query {UserId = id});
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<string>> CreateUser(User user)
+    {
+        return await Mediator.Send(new CreateUser.Command {User = user});
     }
 }
