@@ -1,10 +1,10 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Group} from '@mui/icons-material'
 import { Container } from '@mui/material';
+import { Link } from 'react-router';
 
 export default function NavBar() {
   return (
@@ -14,12 +14,15 @@ export default function NavBar() {
             <Toolbar sx={{display: 'flex', justifyContent: 'space-between'}}>
                 <Box sx={{display: 'flex', alignItems: 'center', gap: 2}}>
                     <Group fontSize="large"/>
-                    <Typography variant="h4" component="div" sx={{fontWeight: 'bold'}}>
+                    <Button
+                        component={Link} to=''
+                        sx={{fontSize: '1.2rem', color: 'white', fontWeight: 'bold'}}>
                         Cinema
-                    </Typography>
+                    </Button>
                 </Box>
                 <Box sx={{display: 'flex', gap: 2}}>
-                    <Button sx={{fontSize: '1.2rem', color: 'white', fontWeight: 'bold'}}>
+                    <Button component={Link} to='/films'
+                        sx={{fontSize: '1.2rem', color: 'white', fontWeight: 'bold'}}>
                         Showtimes
                     </Button>
                     <Button sx={{fontSize: '1.2rem', color: 'white', fontWeight: 'bold'}}>

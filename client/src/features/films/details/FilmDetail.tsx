@@ -1,4 +1,5 @@
 import { Box, Button, Card, CardContent, CardMedia, Grid, Typography } from "@mui/material"
+import { Link } from "react-router";
 
 type Props ={
     film: Film
@@ -45,7 +46,10 @@ export default function FilmDetail({film, cancelSelectedFilm}: Props) {
                     sx={{bgcolor: '#dd0d86'}}>
                     Cancel
                   </Button>
-                  <Button size="large" sx={{bgcolor: '#dd0d86', color: 'white'}}>
+                  <Button 
+                    component={Link} to={`/films/${film.id}`}
+                    size="large" 
+                    sx={{bgcolor: '#dd0d86', color: 'white'}}>
                     Buy Tickets
                   </Button>
                 </Box>

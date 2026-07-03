@@ -12,7 +12,7 @@ public class DbInitializer
 
         var usersList = new List<User>();
         var ticketsList = new List<Ticket>();
-        int seatsPerRow = 20;
+        int seatsPerRow = 15;
         int numberFilms = 15;
 
         usersList.Add(new User
@@ -175,7 +175,7 @@ public class DbInitializer
 
         for(int i = 1; i <= numberFilms; i++)
         {
-            for(int row = 1; row <= 13; row++)
+            for(int row = 1; row <= 10; row++)
             {
                 int sector;
                 decimal price;
@@ -184,23 +184,23 @@ public class DbInitializer
                 {
                     sector = 1;
                     price = 18.00m;
-                }else if(row <= 5)
+                }else if(row <= 4)
                 {
                     sector = 2;
                     price = 22.00m;
-                }else if(row <= 8)
+                }else if(row <= 7)
                 {
                     sector = 3;
                     price = 26.00m;
-                }else if(row <= 10)
+                }else if(row <= 9)
                 {
                     sector = 4;
-                    price = 40.00m;
+                    price = 32.00m;
                 }
                 else
                 {
                     sector = 5;
-                    price = 30.00m;
+                    price = 40.00m;
                 }
 
                 for(int seat = 1; seat <= seatsPerRow; seat++)

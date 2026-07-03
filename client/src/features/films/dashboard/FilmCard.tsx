@@ -1,4 +1,5 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from "@mui/material"
+import { Link } from "react-router";
 
 type Props = {
     film: Film
@@ -36,7 +37,13 @@ export default function FilmCard({film, selectFilm}: Props) {
             <Button 
             onClick={() => {selectFilm(film.id); window.scrollTo({top: 0, behavior: 'smooth'})}} 
             size="medium" variant="contained" sx={{bgcolor: '#dd0d86'}}>Reviews</Button>
-            <Button size="medium" variant="contained" sx={{bgcolor: '#dd0d86'}}>Buy Tickets</Button>
+            <Button 
+                component={Link} to={`/films/${film.id}`} 
+                size="medium" 
+                variant="contained" 
+                sx={{bgcolor: '#dd0d86'}}>
+                Buy Tickets
+            </Button>
         </CardActions>
     </Card>
   )
